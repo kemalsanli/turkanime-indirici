@@ -57,6 +57,7 @@ options.add_argument('--headless')
 profile = webdriver.FirefoxProfile()
 profile.set_preference("network.proxy.type", 0)
 profile.set_preference("permissions.default.image", 2)
+profile.set_preference("media.volume_scale", "0.0")
 
 def ppprint(string): ## Statik yazı printleme fonksiyonu
     print(" "*54,end='\r')
